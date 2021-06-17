@@ -8,7 +8,7 @@ export const AlertState = ({ children }) => {
 
   const hide = () => dispatch({ type: HIDE_ALERT })
 
-  const show = (text, type) => {
+  const show = (text, type = 'secondary') => {
     dispatch({
       type: SHOW_ALERT,
       payload: { type, text },
